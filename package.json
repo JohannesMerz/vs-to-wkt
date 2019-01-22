@@ -1,0 +1,29 @@
+{
+  "name": "csv-to-wkt",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:JohannesMerz/csv-to-wkt.git",
+  "author": "JohannesMerz <johannes_merz@gmx.de>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^23.6.0",
+    "prettier": "^1.16.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "testWatch": "jest --watch",
+    "ulint": "eslint --ignore-path .eslintignore .",
+    "lint": "eslint ."
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "inquirer": "^6.2.1"
+  }
+}

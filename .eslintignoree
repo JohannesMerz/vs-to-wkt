@@ -1,0 +1,8 @@
+node_modules
+coverage
+resources
+build
+dist
+dist-personal
+tmp
+test.js
