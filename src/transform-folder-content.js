@@ -11,7 +11,7 @@ async function transformFolderContent(inputPath, outputFile) {
     (prev, current) => prev.then(() => transformFile(current, writeStream)),
     Promise.resolve()
   );
-  writeStream.close();
+  writeStream.end();
 }
 module.exports = transformFolderContent;
 
