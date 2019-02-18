@@ -5,6 +5,9 @@
   "repository": "git@github.com:JohannesMerz/vs-to-wkt.git",
   "author": "JohannesMerz <johannes_merz@gmx.de>",
   "license": "MIT",
+  "bin": {
+    "vs-to-wkt": "./bin/vs-to-wkt.sh"
+  },
   "devDependencies": {
     "eslint": "^5.12.1",
     "eslint-config-airbnb-base": "^13.1.0",
@@ -17,13 +20,13 @@
   "scripts": {
     "test": "jest",
     "testWatch": "jest --watch",
-    "ulint": "eslint --ignore-path .eslintignore .",
-    "lint": "eslint ."
+    "lint": "eslint --ignore-path .eslintignore ."
   },
   "jest": {
     "testEnvironment": "node"
   },
   "dependencies": {
+    "commander": "^2.19.0",
     "inquirer": "^6.2.1"
   }
 }

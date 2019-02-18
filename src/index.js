@@ -1,6 +1,15 @@
-const { readFileSync, createReadStream } = require('fs');
-const readline = require('readline');
+const program = require('commander');
+const { version } = require('../package.json');
+const { run } = require('./commands');
 
-const path = require('path');
+const DESCRIPTION = `
+  Transfromation tool for transforming visualizer data into wkt format. 
+`;
 
-const vsToWkt = require('./vs-to-wkt-converter');
+module.exports = function bin() {
+  program.description(DESCRIPTION).version(version, '-v, --version');
+
+  run(program);
+
+  program.parse(process.argv);
+};

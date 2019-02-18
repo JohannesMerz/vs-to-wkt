@@ -1,3 +1,8 @@
+ignore.*
+output/*.csv
+input/*.csv
+
+
 # Logs
 logs
 *.log
