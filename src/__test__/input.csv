@@ -1,2 +1,3 @@
 DryDogFood;;FreeForm;point(190, 187);point(190, 187);[[#vertex: point(404,188)], [#vertex: point(190, 187)], [#vertex: point(191, 1317)], [#vertex: point(240, 1318)], [#vertex: point(241, 247)], [#vertex: point(402, 247)]];point(215,724)
 TargetedHealthNutrition-1;;Square;rect(310,300,363,774);point(345,537);point(310,300);
+Manufacturer;;Ellipse;rect(310,300,363,774);point(345,537);point(310,300);

@@ -4,6 +4,8 @@ function vsToWkt(input) {
   switch (type) {
     case 'FreeForm':
       return withName(name)(freeFormToWkt(points[2]));
+    case 'Ellipse':
+    // fallthrough, are handled like squares for now
     case 'Square':
       return withName(name)(squareToWkt(points[0]));
     default:
