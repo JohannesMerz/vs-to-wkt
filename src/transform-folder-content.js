@@ -41,7 +41,7 @@ async function transformFile(file, outputStream) {
         const result = withFileName(vsToWkt(line), fileName);
         outputStream.write(result);
       } catch (error) {
-        rl.error(error);
+        rl.emit('error', error);
       }
     });
 
